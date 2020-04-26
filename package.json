@@ -1,0 +1,14 @@
+{
+  "name": "rarely-proper",
+  "version": "1.0.0",
+  "description": "Childish but Full Grown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roger Flanagan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,396 @@
+/* --Variables */
+:root {
+    --white: #FFFFFF;
+    --greyLt: #E5E5E5;
+    --grey: #666666;
+    --greyAlt: #999999;
+    --black: #2E2D2D;
+    --blue: #1fb4dd;
+    --peach: #FF8875;
+}
+
+/* --Fonts */
+@font-face {
+    font-family: 'Azo Sans Uber';
+    src: url('./assets/fonts/azo-sans-uber-webfont.woff2') format('woff2'),
+         url('./assets/fonts/azo-sans-uber-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "iA Writer Duospace Italic";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./assets/fonts/iAWriterDuospace-Bolditalic.eot") format("embedded-opentype"),
+        url("./assets/fonts/iAWriterDuospace-Bolditalic.woff2") format("woff2"),
+        url("./assets/fonts/iAWriterDuospace-Bolditalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "iA Writer Duospace";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./assets/fonts/iAWriterDuospace-Regular.eot") format("embedded-opentype"),
+        url("./assets/fonts/iAWriterDuospace-Regular.woff2") format("woff2"),
+        url("./assets/fonts/iAWriterDuospace-Regular.woff") format("woff");
+}
+
+/* --Reset */
+* { box-sizing: border-box; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html { font-size: 62.5%; } 
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem; 
+    line-height: 1;
+}
+
+/* --Logo/Brand */
+.logo {
+    animation: intro .75s forwards, move .75s forwards;
+    font-family: 'Azo Sans Uber';
+    font-size: 0;
+    height: 4.2rem;
+    text-align: center;
+}
+
+.logo span {
+    font-size: 28px;
+    display: inline-block;
+    letter-spacing: -2px;
+    position: relative;
+    z-index: 10;
+}
+
+.spacer {
+    margin: 0 1rem;
+}
+
+.logo-letter-one,
+.logo-letter-six,
+.logo-letter-eleven {
+    transform: rotate(-10deg);
+}
+
+.logo-letter-two,
+.logo-letter-seven,
+.logo-letter-twelve {
+    transform: rotate(-5.40302deg);
+}
+
+.logo-letter-three,
+.logo-letter-eight,
+.logo-letter-thirteen {
+    transform: rotate(4.16147deg);
+}
+
+.logo-letter-four,
+.logo-letter-nine {
+    transform: rotate(9.89992deg);
+}
+
+.logo-letter-five,
+.logo-letter-ten {
+    transform: rotate(6.53644deg);
+}
+
+
+/* --Typography */
+h2 {
+    color: var(--black);
+    display: inline-block;
+    font-family: "iA Writer Duospace Italic";
+    font-size: 2.8rem;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+h2 a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: var(--peach);
+}
+
+h3 {
+    color: var(--greyAlt);
+    font-family: "iA Writer Duospace Italic";
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+    text-align: center;
+}
+
+h4 {
+    color: var(--blue);
+    font-family: "iA Writer Duospace";
+	font-size: 1.7rem;
+	line-height: 1.5;
+	margin-bottom: 1.2rem;
+}
+
+h5 {
+    color: var(--blue);
+    font-family: "iA Writer Duospace";
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+    padding-top: 1rem;
+}
+
+h6 {
+    color: var(--blue);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    margin-bottom: .7rem;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--grey);
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    padding-right: 5%;
+}
+
+ul {
+    color: var(--grey);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+li {
+    list-style-type: disc;
+    margin-left: 2rem;
+    padding-right: 5%;  
+}
+
+/* --Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 1rem 0;
+}
+
+/* --Modules */
+
+/* Header */
+.header {
+    animation: fade-in .25s .25s forwards;
+    opacity: 0;
+    padding-bottom: 5rem;
+}
+
+.intro {
+    color: #1fb4dd;
+    font-family: "iA Writer Duospace";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 0;
+    text-align: center;
+}
+
+/* Work */
+.work {
+    animation: fade-in .25s .25s forwards;
+    opacity: 0;
+    border-top: 1px solid var(--greyLt);
+    display: flex;
+    flex-direction: column;
+}
+
+.work__meta {
+    border-top: 3px solid var(--blue);
+}
+
+.work__duration {
+    color: var(--grey);
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+}
+
+.work__highlight {
+    border-top: 1px solid var(--greyLt);
+    color: var(--greyAlt);
+    font-size: 1.2rem;
+    margin: 0;
+    padding: .7rem 1rem .7rem 0;
+}
+
+.work__highlight a {
+    color: var(--greyAlt);
+    display: block;
+    text-decoration: none;
+}
+
+.work__highlight a:hover {
+    color: var(--peach);
+    text-decoration: underline;
+}
+
+.work__content {
+    margin: 5rem 0;
+}
+
+.work__brand { display: none; }
+
+/* Personal */
+.personal {
+    align-items: center;
+    background: var(--greyLt);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5rem 0;
+    padding: 2rem 0;
+}
+
+.personal h4 {
+    margin: 0;
+}
+
+.personal a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+/* Breakpoints */
+@media (min-width: 980px) {
+    h2 {
+        display: block;
+    }
+
+    .container {
+        margin: auto;
+        max-width: 94rem;
+        padding-bottom: 7.2rem;
+    }
+
+    .intro {
+        font-size: 2.1rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .work {
+        flex-direction: row;
+        padding: 5rem 0;
+        position: relative;
+    }
+
+    .work__meta {
+        margin-right: 3rem; 
+        margin-top: -5.1rem;
+        padding-top: 2rem;
+        width: 29rem;
+    }
+
+    .work__duration {
+        display: block;
+    }
+
+    .work__content {
+        flex: 1;
+        margin: 0;
+    }
+
+    .work__brand {
+        display: block;
+        height: 105px;
+        transform: translateY(25%);
+        width: 140px;
+    }
+
+    .personal {
+        flex-direction: row;
+    }
+}
+
+/* Animations */
+@keyframes intro {
+    0% {
+        text-shadow: 0 1vw 0 var(--black), 0 2vw 0 var(--peach), 0 3vw 0 var(--peach);
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateY(200%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

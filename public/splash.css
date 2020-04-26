@@ -1,0 +1,394 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url('./assets/fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sonders';
+    src: url('./assets/fonts/sondersans-black-webfont.woff2') format('woff2'),
+         url('./assets/fonts/sondersans-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --Reset */
+* { box-sizing: border-box; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --primary: #24677E;
+    --purpleSecondary: #3E3760;
+    --purpleAlt: #D73A6A;
+    --purpleAccent: #05090D;
+}
+
+body {
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+
+/* TAPE */
+.tape {
+    background: var(--purpleAlt);
+    border-radius: 10px;
+    box-shadow: 0 0 0 8px var(--purpleSecondary);
+    height: 346px;
+    position: relative;
+    width: 540px;
+}
+
+.tape:before {
+    background: var(--purpleAccent);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 0 8px var(--purpleAccent);
+    content: '';
+    height: 24px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    transform: translateY(100%);
+    z-index: -1;
+}
+
+.tape:after {
+    content: 'Coming Soon';
+    font-family: 'League Gothic';
+    font-size: 5vw;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    transform: translateY(200%);
+    text-transform: uppercase;
+    opacity: .4;
+}
+
+.tape__head {
+    border-bottom: 8px solid var(--purpleSecondary);
+    height: 84px;
+    margin: auto;
+    position: relative;
+    width: 356px;
+}
+
+.tape__head:before {
+    background: var(--purpleSecondary);
+    content: "";
+      position: absolute;
+      left: -8px;
+      transform: rotate(-9deg);
+      top: -8px;
+      bottom: -8px;
+      width: 8px;
+}
+
+.tape__head:after {
+    background: var(--purpleSecondary);
+    content: "";
+      position: absolute;
+      right: -8px;
+      transform: rotate(9deg);
+      top: -8px;
+      bottom: -8px;
+      width: 8px;
+}
+
+.tape__roller {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 5px;
+    height: 42px;
+}
+
+.tape__roller li {
+    border-radius: 100%;
+    background: var(--purpleSecondary);
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
+.tape__roller li:before {
+    background: var(--primary);
+    border-radius: inherit;
+    content: '';
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.tape__roller li:first-child {
+    left: 0;
+    top: 0;
+}
+
+.tape__roller li:nth-child(2) {
+    left: 55px;
+    top: 10px;
+}
+
+.tape__roller li:nth-child(3) {
+    right: 55px;
+    top: 10px;
+}
+
+.tape__roller li:last-child {
+    right: 0;
+    top: 0;
+}
+
+.tape__guide {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 15px;
+    height: 38px;
+}
+
+.tape__guide li {
+    border-radius: 100%;
+    background: var(--purpleSecondary);
+    position: absolute;
+    height: 40px;
+    width: 40px;
+}
+
+.tape__guide li:before {
+    background: var(--primary);
+    border-radius: inherit;
+    content: '';
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.tape__guide li:first-child {
+    left: 0;
+    top: 0;
+}
+
+.tape__guide li:last-child {
+    right: 0;
+    top: 0;
+}
+
+#particles-js {
+    box-shadow: 0 0 0 8px var(--purpleSecondary);
+    border-radius: 10px;
+    height: 215px;
+    width: 470px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tape__face {
+    height: 215px;
+    width: 470px;
+    overflow: hidden;
+    margin: auto;
+    transform: translateY(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 0 8px var(--purpleSecondary);
+    position: relative;
+}
+
+.tape__window {
+    height: 100px;
+    width: 320px;
+    margin: auto;
+    transform: translateY(40px);
+    border-radius: 5px;
+    background: var(--purpleAccent);
+    position: relative;
+    z-index: 2;
+}
+
+.tape__window:before {
+    content: '';
+    background: var(--purpleAlt);
+    border-radius: 10px;
+    width: 130px;
+    height: 75px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.tape__reel {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.tape__reel span {
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    position: absolute;
+}
+
+.tape__reel span:before {
+    content: '';
+    position: absolute;
+    background: var(--purpleAlt);
+    top: 20%;
+    bottom: 20%;
+    width: 10px;
+    transform: translateX(-1px);
+}
+
+.tape__reel--supply,
+.tape__reel--takeup {
+    animation: spin 100s infinite;
+    height: 80px;
+    width: 80px;
+    background: var(--purpleSecondary);
+    border-radius: 100%;
+    position: absolute;
+}
+
+.tape__reel--supply:before,
+.tape__reel--takeup:before {
+    border-radius: inherit;
+    content: '';
+    background: var(--primary);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 66px;
+    width: 66px;
+}
+
+.tape__reel--supply {
+    left: 0;
+}
+
+.tape__reel--takeup {
+    right: 0;
+}
+
+.tape__reel--supply > *:first-child,
+.tape__reel--takeup > *:first-child {
+    transform: rotate(85deg);
+    left: 37px;
+}
+
+.tape__reel--supply > *:nth-child(2),
+.tape__reel--takeup > *:nth-child(2) {
+    transform: rotate(30deg);
+    left: 37px;
+}
+
+.tape__reel--supply > *:last-child,
+.tape__reel--takeup > *:last-child {
+    transform: rotate(-214deg);
+    left: 37px;
+}
+
+
+.tape__title {
+    background: var(--primary);
+    border-radius: 5px;
+    border: 6px solid var(--purpleSecondary);
+    left: 8px;
+    right: 8px;
+    height: 50px;
+    bottom: 8px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Sonders';
+    color: #DDBCBE;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media (max-width: 584px) {
+    .tape {transform: scale(.75);}
+
+    .tape:before {content: none;}
+
+    .tape:after {font-size: 15vw;}
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(3600deg)
+    }
+}

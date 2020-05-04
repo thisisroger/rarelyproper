@@ -1,0 +1,8 @@
+{
+    "name": "celebrate-some-failure",
+    "short_name": "hdtgm",
+    "start_url": "../celebratesomefailure.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#4DBA87"
+  }

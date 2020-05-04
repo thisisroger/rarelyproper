@@ -1,0 +1,56 @@
+{
+    "results": [{
+        "id": "fateful-findings",
+        "film": {
+            "title": "Fateful Findings",
+            "summary": "A computer scientist/novelist reunites with his childhood friend and hacks into government databases, while facing the dire and fateful consequences of his mystical actions obtained as a child.",
+            "trailer": "https://www.youtube.com/watch?v=hQ7GQbfj__0",
+            "poster": "/static/assets/posters/fateful-findings-poster.jpg"
+        },
+        "guests": {
+            "guestOne": {
+                "name": "Rob Huebel",
+                "photo": "/static/assets/guests/rob-huebel.jpg",
+                "bio": "Rob Huebel is a former student of and frequent performer at the UCB Theatre. In fact, it was at the New York City UCB Theatre that Rob met Paul Scheer and Aziz Ansari, the guys with whom he would create Human Giant for MTV. Following the success of Human Giant, Rob has fleshed out his resume with roles on The Office, 30 Rock, Modern Family, and the wonderful Childrens Hospital. You can still find Rob at the UCB in Los Angeles performing in the shows Facebook and Crash Test. Listen to Rob in Season One of Mike Detective here on Earwolf.",
+                "plugs": [
+                    {
+                        "title": "Human Giant",
+                        "URL": "https://www.amazon.com/Mind-Explosion/dp/B000PAVSBU",
+                        "media": "/static/assets/plugs/human-giant.jpg"
+                    },
+                    {
+                        "title": "Do You Want to See a Dead Body?",
+                        "URL": "https://www.youtube.com/channel/UCFGGYi2aZoXzdeOeeNAD1sw",
+                        "media": "/static/assets/plugs/do-you-want-to-see-a-dead-body.jpg"
+                    },
+                    {
+                        "title": "Crash Test",
+                        "URL": "https://www.amazon.com/dp/B015IVODSU",
+                        "media": "/static/assets/plugs/crash-test.jpg"
+                    },
+                    {
+                        "title": "I Love You, Man",
+                        "URL": "https://www.amazon.com/dp/B002ICE0O0",
+                        "media": "/static/assets/plugs/i-love-you-man.jpg"
+                    },
+                    {
+                        "title": "Children's Hospital",
+                        "URL": "https://www.amazon.com/dp/B003VSA8VO",
+                        "media": "/static/assets/plugs/childrens-hospital.jpg"
+                    },
+                    {
+                        "title": "Parks and Recreation",
+                        "URL": "https://www.amazon.com/dp/B0026Q9XJA",
+                        "media": "/static/assets/plugs/parks-and-recreation.jpg"
+                    }
+                ]
+            }
+        },
+        "episodeDescription": "HDTGM All-star Rob Huebel (Medical Police) joins Paul, June, and Jason to discuss the 2012 cult classic Fateful Findings. Recorded live from the Moore theatre in Seattle, they talk about everything Neil Breen including soft curves, magic, tons of laptops, the salad scene, and more.",
+        "mediaLinks": {
+            "stitcherURL": "https://www.stitcher.com/podcast/earwolf/how-did-this-get-made/e/66318883",
+            "amazonURL": "https://www.amazon.com/Fateful-Findings-Danielle-Andrade/dp/B015OSJCKG",
+            "itunesURL": "https://trailers.apple.com/trailers/independent/fatefulfindings/"
+        }
+    }]
+}

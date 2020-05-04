@@ -14,7 +14,7 @@ app.get('/cv',function(req,res) {
 });
 
 app.get('/celebratesomefailure',function(req,res) {
-  res.sendFile(__dirname + '/celebrate-some-failure/index.html');
+  res.sendFile(__dirname + '/celebratesomefailure.html');
 });
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
